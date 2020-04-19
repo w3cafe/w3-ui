@@ -8,5 +8,9 @@ export default {
       sm: 576,
       xs: 400,
     }
+  },
+  colors: {
+    primary: 'palevioletred',
+    secondary: 'black'
   }
 }

@@ -7,7 +7,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
-    "prepublishOnly": "npm run transpile"
+    "prepublishOnly": "npm run transpile",
+    "storybook": "start-storybook -p 6006 --docs",
+    "build-storybook": "build-storybook --docs"
   },
   "peerDependencies": {
     "react": "16.13.1",
@@ -19,6 +21,12 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "7.9.5",
     "@babel/preset-react": "7.9.4",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "@storybook/theming": "^5.3.18",
     "babel-loader": "8.1.0",
     "html-webpack-plugin": "^4.2.0",
     "webpack": "4.42.1",
@@ -29,8 +37,11 @@
     "type": "git",
     "url": "git+https://github.com/w3cafe/w3-ui.git"
   },
-
-  "keywords": ["styled-components", "reactjs", "ui-framework"],
+  "keywords": [
+    "styled-components",
+    "reactjs",
+    "ui-framework"
+  ],
   "author": "Vivek Soni",
   "license": "MIT",
   "bugs": {
@@ -38,6 +49,7 @@
   },
   "homepage": "https://github.com/w3cafe/w3-ui#readme",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.0"

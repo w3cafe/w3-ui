@@ -1,9 +1,3 @@
-import Col from './Col';
-import Container from './Container';
-import Row from './Row';
-
-export default {
-  Container,
-  Row,
-  Col
-}
+export { default as Col } from './Col';
+export { default as Row } from './Row';
+export { default as Container} from './Container';
