@@ -1,8 +1,8 @@
 {
   "name": "w3-ui",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "UI Library based on styled components",
+  "private": false,
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -11,42 +11,35 @@
   },
   "peerDependencies": {
     "react": "16.13.1",
-    "react-dom": "^16.13.1",
-    "tailwindcss": "1.2.0"
+    "react-dom": "16.13.1",
+    "styled-components": "5.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "7.9.5",
     "@babel/preset-react": "7.9.4",
-    "autoprefixer": "^9.7.6",
     "babel-loader": "8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.5.2",
-    "cssnano": "^4.1.10",
     "html-webpack-plugin": "^4.2.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "postcss-import": "^12.0.1",
-    "postcss-loader": "^3.0.0",
-    "purgecss-webpack-plugin": "^2.1.2",
-    "tailwindcss": "^1.2.0",
     "webpack": "4.42.1",
     "webpack-cli": "3.3.11",
-    "webpack-dev-server": "3.10.3"
+    "webpack-dev-server": "^3.10.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/w3cafe/w3-ui.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+
+  "keywords": ["styled-components", "reactjs", "ui-framework"],
+  "author": "Vivek Soni",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/w3cafe/w3-ui/issues"
   },
   "homepage": "https://github.com/w3cafe/w3-ui#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
   }
 }
