@@ -32,6 +32,6 @@ export default create({
   inputBorderRadius: 4,
 
   brandTitle: 'w3-ui',
-  brandUrl: 'https://example.com',
-  brandImage: 'https://placehold.it/350x150',
+  brandUrl: 'http://w3.cafe',
+  brandImage: 'https://raw.githubusercontent.com/w3cafe/w3-ui/master/public/images/LogoMakr_0Yusvd.png',
 });

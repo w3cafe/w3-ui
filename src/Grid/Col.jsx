@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-/**
- * Inspired by https://www.toptal.com/sass/css3-flexbox-sass-grid-tutorial
- */
+
+import { Padding } from '../CommonAttributes';
 import { BorderColor, BGColor, FontColor  } from '../Theme/ThemeProps';
+import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 const Col = styled.div`
   ${BorderColor}
   ${BGColor}
   ${FontColor}
+  ${Padding}
   flex: 1;
   ${
   (props) =>
@@ -24,5 +25,11 @@ const Col = styled.div`
       }, '')
 }
 `;
+
+Col.defaultProps = {
+  theme: {
+    ...DefaultThemeProps
+  }
+}
 
 export default Col;

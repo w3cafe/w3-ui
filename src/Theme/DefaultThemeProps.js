@@ -1,4 +1,5 @@
 export default {
+  spaceUnit: 2,
   grid: {
     size: 12,
     screenSizesInPx: {
@@ -10,7 +11,7 @@ export default {
     }
   },
   colors: {
-    primary: 'palevioletred',
+    primary: '#dce0ff',
     secondary: 'black'
   }
 }

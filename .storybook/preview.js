@@ -7,4 +7,6 @@ addParameters({
     container: DocsContainer,
     page: DocsPage,
   },
+  viewport: {
+  },
 });
