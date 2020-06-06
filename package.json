@@ -1,6 +1,6 @@
 {
   "name": "w3-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "UI Library based on styled components",
   "private": false,
   "main": "dist/index.js",
