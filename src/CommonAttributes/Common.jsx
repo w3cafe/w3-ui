@@ -6,10 +6,8 @@ export const FontColor = css`
 export const BGColor = css`
   background-color: ${props => props.theme.colors[props.bgColor] || 'none'};
 `;
+//FIXME: MOved to CommonAttributes/Border
 export const BorderColor = css`
-   ${({borderColor, theme}) => borderColor && `
-    border: 1px solid;
-    border-color: ${theme.colors[borderColor] || borderColor};
-  `}
+   
 `;
 
