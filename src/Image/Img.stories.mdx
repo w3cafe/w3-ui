@@ -1,0 +1,14 @@
+import { Meta, Story, Props, Heading, Source, Preview, Shared } from '@storybook/addon-docs/blocks';
+import Img from './Img';
+
+<Meta title='Img' component={Img} />
+
+
+<Preview>
+    <Story name='Img' height='400px'>
+      <Img src="https://picsum.photos/200/300" round />
+    </Story>
+    <Story name='Img Thumbnail' height='400px'>
+          <Img src="https://picsum.photos/200/300" thumbnail />
+     </Story>
+</Preview>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Padding } from '../CommonAttributes';
-import { BorderColor, BGColor, FontColor  } from '../Theme/ThemeProps';
+import { BorderColor, BGColor, FontColor  } from '../CommonAttributes/Common';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 const Col = styled.div`

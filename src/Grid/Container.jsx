@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, {css} from 'styled-components';
 import { Padding, TextUtility } from '../CommonAttributes';
 
-import {BorderColor, BGColor, FontColor} from '../Theme/ThemeProps';
+import {BorderColor, BGColor, FontColor} from '../CommonAttributes/Common';
 import DefaultThemeProps from '../Theme/DefaultThemeProps';
 
 const Container = styled.div`

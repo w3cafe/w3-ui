@@ -1,5 +1,4 @@
 import {css} from 'styled-components';
-import DefaultThemeProps from '../Theme/DefaultThemeProps';
 
 export const FontColor = css`
   color: ${props => props.theme.colors[props.color] || 'none'};
