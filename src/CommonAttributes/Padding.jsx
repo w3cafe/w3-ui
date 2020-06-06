@@ -30,7 +30,6 @@ Padding.defaultProps = {
   }
 }
 Padding.propTypes = {
-
   p: PropTypes.number,
 
   p_v: PropTypes.number,

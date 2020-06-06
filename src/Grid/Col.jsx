@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Padding } from '../CommonAttributes';
-import { BorderColor, BGColor, FontColor  } from '../Theme/ThemeProps';
+import { Padding, Border } from '../CommonAttributes';
+import {  BGColor, FontColor  } from '../Theme/ThemeProps';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 const Col = styled.div`
-  ${BorderColor}
+  ${Border}
   ${BGColor}
   ${FontColor}
   ${Padding}
