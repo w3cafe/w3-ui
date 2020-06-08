@@ -1,6 +1,6 @@
 {
   "name": "w3-ui",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "UI Library based on styled components",
   "private": false,
   "main": "dist/index.js",
@@ -12,9 +12,9 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "styled-components": "5.1.0"
+    "react": ">=16",
+    "styled-components": ">=5.1.0",
+    "prop-types": ">=15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -30,6 +30,7 @@
     "@storybook/theming": "^5.3.18",
     "babel-loader": "8.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "styled-components": "^5.1.1",
     "webpack": "4.42.1",
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "^3.10.3"
@@ -45,14 +46,14 @@
   ],
   "author": "Vivek Soni",
   "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "Grid.js"
+  ],
   "bugs": {
     "url": "https://github.com/w3cafe/w3-ui/issues"
   },
-  "homepage": "https://github.com/w3cafe/w3-ui#readme",
-  "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-components": "^5.1.0"
-  }
+  "homepage": "https://github.com/w3cafe/w3-ui#readme"
 }
