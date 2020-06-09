@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Padding, Border } from '../CommonAttributes';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
+import {getValue} from '../utils';
 
 const Row = styled.div`
     ${Border}
@@ -10,6 +11,11 @@ const Row = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    ${({spacing, theme}) => spacing && `
+    & div > div{
+        margin: ${getValue(spacing, theme.spaceUnit)};
+     }
+    `}
 `;
 Row.defaultProps = {
     theme: {

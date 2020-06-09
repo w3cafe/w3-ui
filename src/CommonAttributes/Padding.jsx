@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
+//change to pad
 const Padding = css`
   ${({ p, theme }) => p && `
     padding: ${theme.spaceUnit * (p*1)}px;
