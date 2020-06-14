@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, {css} from 'styled-components';
-import {BorderColor, BGColor, Padding, Margin} from '../CommonAttributes';
+import {Border, BackgroundColor, Padding, Margin} from '../Common';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 const Img = (props) => {
@@ -9,8 +9,8 @@ const Img = (props) => {
 };
 
 const StyledImg = styled(Img)`
-  ${BorderColor}
-  ${BGColor}
+  ${Border}
+  ${BackgroundColor}
   ${Padding}
   ${Margin}
   ${({round}) => round && css`

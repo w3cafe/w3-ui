@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Padding, Border, Margin} from '../CommonAttributes';
-import {BGColor, FontColor} from '../CommonAttributes/Common';
+import {Padding, Border, Margin} from '../Common';
+import {BackgroundColor, FontColor} from '../Common/Color';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 const SCREEN_SIZES = ['xs', 'sm', 'md', 'lg', 'xl'];
@@ -36,19 +36,22 @@ const ColWrapper = styled.div`
 }
   `;
 
-const Col = styled.div`
+const ColItem = styled.div`
   ${Border}
-  ${BGColor}
+  ${BackgroundColor}
   ${FontColor}
   ${Padding}
 `;
 
+const Col = (props) => {
+  return (<ColWrapper {...props}>
+    <ColItem {...props}>{props.children}</ColItem>
+  </ColWrapper>);
+};
 Col.defaultProps = {
   theme: {
     ...DefaultThemeProps
   }
 }
 
-export default (props) => (<ColWrapper {...props}>
-  <Col {...props}>{props.children}</Col>
-</ColWrapper>);
+export default Col;

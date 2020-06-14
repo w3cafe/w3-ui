@@ -1,5 +1,6 @@
 export default {
   spaceUnit: 2,
+  baseFontSize: 14,
   grid: {
     size: 12,
     screenSizesInPx: {
@@ -11,7 +12,7 @@ export default {
     }
   },
   colors: {
-    primary: '#dce0ff',
-    secondary: 'black'
+    primary: ['#dce0ff'],
+    secondary: ['black'],
   }
 }

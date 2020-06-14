@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Padding, Border } from '../CommonAttributes';
+import { Padding, Border } from '../Common';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
 import {getValue} from '../utils';
 

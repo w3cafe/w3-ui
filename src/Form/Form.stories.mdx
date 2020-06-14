@@ -1,0 +1,23 @@
+import { Meta, Story, Props, Heading, Source, Preview, Shared } from '@storybook/addon-docs/blocks';
+import {Button} from './index';
+import {Container} from '../Grid';
+
+<Meta title='Form'/>
+
+# Form
+Some **markdown** description, or whatever you want.
+
+## Button
+
+<Preview>
+    <Story name='Button' height='200px'>
+        <Container>
+           <Button>Default Button</Button>
+           <Button lg>Large Button</Button>
+        </Container>
+    </Story>
+</Preview>
+
+## Props
+
+<Props of={Button} />

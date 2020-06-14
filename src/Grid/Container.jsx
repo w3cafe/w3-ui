@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import styled, {css} from 'styled-components';
-import { Padding, TextUtility } from '../CommonAttributes';
-
-import {BorderColor, BGColor, FontColor} from '../CommonAttributes/Common';
+import { Padding, TextUtility, BackgroundColor, FontColor, Border }
+from '../Common';
 import DefaultThemeProps from '../Theme/DefaultThemeProps';
-
 const Container = styled.div`
   ${Padding}
+  ${FontColor}
   ${TextUtility}
-  ${BGColor}
-  ${BorderColor}
+  ${BackgroundColor}
+  ${Border}
   max-width: ${({theme}) => (theme.grid.screenSizesInPx.md)}px;
+  font-size: ${({theme}) => (theme.baseFontSize)}px;;
   margin: 0 auto;
   ${({fluid}) => fluid && `
     margin: 0;
@@ -29,11 +29,7 @@ Container.propTypes = {
 }
 
 Container.defaultProps = {
-  theme: {
-    spaceUnit: DefaultThemeProps.spaceUnit,
-    grid: DefaultThemeProps.grid,
-    colors: DefaultThemeProps.colors
-  }
+  theme: DefaultThemeProps
 }
 
 export default Container;
