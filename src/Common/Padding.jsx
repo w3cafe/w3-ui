@@ -6,6 +6,7 @@ import {getValue} from '../utils';
 //change to pad
 const Padding = css`
   ${({ p, pad_v, pad_h, pad_t, pad_r, pad_b, pad_l, theme }) => {
+    console.log('in padding', theme);
   let finalPadding = [0, 0, 0, 0];
   if (p) {
     finalPadding = [p,p,p,p];

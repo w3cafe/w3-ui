@@ -16,7 +16,7 @@ export default create({
   fontBase: '"Open Sans", sans-serif',
   fontCode: 'monospace',
 
-  // Text colors
+  // TextUtility colors
   textColor: 'black',
   textInverseColor: 'rgba(255,255,255,0.9)',
 

@@ -1,5 +1,7 @@
 import DefaultThemeProps from "./Theme/DefaultThemeProps";
 export function getValue(value, unit = 1) {
+  console.log('value', value);
+  console.log('unit', unit);
   if (typeof value === 'string') {
     return value;
   }

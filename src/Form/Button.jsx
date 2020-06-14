@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, {css} from 'styled-components';
-import { Padding, Border, Margin, TextUtility, Hover, BackgroundColor, FontColor, Text } from '../Common';
+import { Padding, Border, Margin, Hover, BackgroundColor, FontColor, TextUtility } from '../Common';
+import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 
 const ButtonCommon =  css`
@@ -9,9 +10,8 @@ const ButtonCommon =  css`
     ${Border}
     ${Margin}
     ${TextUtility}
-    ${BackgroundColor}
     ${FontColor}
-    ${Text}
+    ${TextUtility}
     cursor: pointer;
 `;
 const LinkStyle = styled.a `
@@ -20,7 +20,8 @@ const LinkStyle = styled.a `
 const ButtonStyle = styled.button`
     ${ButtonCommon}
     ${Hover}
-   
+    ${BackgroundColor}
+    border: none;
 `;
 
 const Button = (props) => {
@@ -46,9 +47,13 @@ const Button = (props) => {
 }
 
 Button.defaultProps = {
+  background: 'primary',
+  color: '#fff',
+  theme: DefaultThemeProps,
 };
 Button.propTypes = {
-  md: PropTypes.bool
+  md: PropTypes.bool,
+  lg: PropTypes.bool
 }
 export default Button;
 
