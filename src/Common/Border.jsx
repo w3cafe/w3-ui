@@ -9,7 +9,7 @@ const Border = css`
       border-bottom: ${b_b}px solid;
     `}
     ${({borderColor, theme}) => borderColor && `
-      border-color: ${getColor({themeColors: theme.colors, color: borderColor})}
+      border-color: ${getColor({themeColors: theme.colors, color: borderColor})};
     `}
   `;
 

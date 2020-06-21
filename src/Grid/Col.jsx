@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Padding, Border, Margin} from '../Common';
+import {Padding, Border, Margin, TextUtility} from '../Common';
 import {BackgroundColor, FontColor} from '../Common/Color';
 import DefaultThemeProps from "../Theme/DefaultThemeProps";
 
 const SCREEN_SIZES = ['xs', 'sm', 'md', 'lg', 'xl'];
 
-const ColWrapper = styled.div`
-  flex: 1;
+const Col = styled.div`
+  ${Border}
+  ${TextUtility}
+  ${BackgroundColor}
+  ${FontColor}
+  ${Padding}
   ${(props) => {
   let lastMatch = null;
   return SCREEN_SIZES
@@ -19,15 +23,15 @@ const ColWrapper = styled.div`
         acc += `
             @media(${breakPointSelect}-width: ${props.theme.grid.screenSizesInPx[size] + 'px'}) {
               flex: 0 1 auto;
-              flex-basis: ${(100 / (props.theme.grid.size / props[size])) + '%'};
-              width: ${(100 / (props.theme.grid.size / props[size])) + '%'};
+              flex-basis: calc(${(100 / (props.theme.grid.size / props[size])) + '%'} - var(--gap));
+              width: calc(${(100 / (props.theme.grid.size / props[size])) + '%'} - var(--gap));
             }`
       } else if (lastMatch) {
         acc += `
             @media(${breakPointSelect}-width: ${props.theme.grid.screenSizesInPx[size] + 'px'}) {
               flex: 0 1 auto;
-              flex-basis: ${(100 / (props.theme.grid.size / props[lastMatch])) + '%'};
-              width: ${(100 / (props.theme.grid.size / props[lastMatch])) + '%'};
+              flex-basis: calc(${(100 / (props.theme.grid.size / props[lastMatch])) + '%'} - var(--gap));
+              width: calc(${(100 / (props.theme.grid.size / props[lastMatch])) + '%'} - var(--gap));
             }`
       }
       return acc;
@@ -36,18 +40,6 @@ const ColWrapper = styled.div`
 }
   `;
 
-const ColItem = styled.div`
-  ${Border}
-  ${BackgroundColor}
-  ${FontColor}
-  ${Padding}
-`;
-
-const Col = (props) => {
-  return (<ColWrapper {...props}>
-    <ColItem {...props}>{props.children}</ColItem>
-  </ColWrapper>);
-};
 Col.defaultProps = {
   theme: {
     ...DefaultThemeProps

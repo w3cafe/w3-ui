@@ -7,14 +7,19 @@ import {getValue} from '../utils';
 
 const Row = styled.div`
     ${Border}
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    --gap: 0px;
     ${({spacing, theme}) => spacing && `
-    & div > div{
-        margin: ${getValue(spacing, theme.spaceUnit)};
+     --gap: ${getValue(spacing, theme.spaceUnit)}px;
+     margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+     width: calc(100% + var(--gap));
+     & > * {
+         margin: var(--gap) 0 0 var(--gap);
      }
+     
     `}
 `;
 Row.defaultProps = {
