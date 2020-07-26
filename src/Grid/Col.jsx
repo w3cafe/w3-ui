@@ -13,6 +13,7 @@ const Col = styled.div`
   ${BackgroundColor}
   ${FontColor}
   ${Padding}
+   flex: 1;
   ${(props) => {
   let lastMatch = null;
   return SCREEN_SIZES
@@ -28,8 +29,8 @@ const Col = styled.div`
             }`
       } else if (lastMatch) {
         acc += `
+            flex: 0 1 auto;
             @media(${breakPointSelect}-width: ${props.theme.grid.screenSizesInPx[size] + 'px'}) {
-              flex: 0 1 auto;
               flex-basis: calc(${(100 / (props.theme.grid.size / props[lastMatch])) + '%'} - var(--gap));
               width: calc(${(100 / (props.theme.grid.size / props[lastMatch])) + '%'} - var(--gap));
             }`

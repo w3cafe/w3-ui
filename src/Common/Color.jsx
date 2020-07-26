@@ -10,7 +10,7 @@ export const FontColor = css`
 `;
 export const BackgroundColor = css`
     ${({background, theme}) => background && `
-      background-color: ${getColor({themeColors: theme.colors, background})};
+      background: ${getColor({themeColors: theme.colors, background})};
     `}
 `;
 

@@ -12,6 +12,7 @@ const ButtonCommon =  css`
     ${TextUtility}
     ${FontColor}
     ${TextUtility}
+
     cursor: pointer;
 `;
 const LinkStyle = styled.a `
@@ -20,8 +21,9 @@ const LinkStyle = styled.a `
 const ButtonStyle = styled.button`
     ${ButtonCommon}
     ${Hover}
-    ${BackgroundColor}
     border: none;
+    ${BackgroundColor}
+
 `;
 
 const Button = (props) => {
@@ -53,7 +55,8 @@ Button.defaultProps = {
 };
 Button.propTypes = {
   md: PropTypes.bool,
-  lg: PropTypes.bool
+  lg: PropTypes.bool,
+  background: PropTypes.string,
 }
 export default Button;
 

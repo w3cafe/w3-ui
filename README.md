@@ -1,9 +1,13 @@
-#w3-ui
+# w3-ui
+
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![storybook](https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg)](https://w3cafe.github.io/w3-ui/)
 
-
+## Quick Start
+```sh
+npm install w3-ui 
+```
 ## References
 
  - https://www.toptal.com/sass/css3-flexbox-sass-grid-tutorial
